@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <table class="table table-bordered table text-center shadow">
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Destination</th>
+                <th>Trash</th>
+                <th>Change</th>
+            </tr>
+            <% details.forEach(function(user){ %>
+                <tr>
+                    <td>
+                        <%= user.id %>
+                    </td>
+                    <td>
+                        <%= user.name %>
+                    </td>
+                    <td>
+                        <%= user.email %>
+                    </td>
+                    <td>
+                        <%= user.destination %>
+                    </td>
+                    <td><a href="/delete/<%= user.id %>" class="btn btn-danger btn-sm">delete</a></td>
+                    <td><a href="/change/<%= user.id %>" class="btn btn-success btn-sm">change</a></td>
+                </tr>
+                <% }) %>
+        </table>
+    </div>
+</body>
+
+</html>

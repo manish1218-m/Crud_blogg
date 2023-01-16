@@ -1,0 +1,16 @@
+{
+  "name": "crud_blog",
+  "version": "1.0.0",
+  "description": "crud blog with mysql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "keywords": [
+    "crud",
+    "mysql"
+  ],
+  "author": "Manish Sai Jakkula",
+  "license": "ISC"
+}
